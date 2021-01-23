@@ -31,7 +31,7 @@ namespace WriterApp
             MaterialSkinManager manager = MaterialSkinManager.Instance;
             manager.AddFormToManage(this);
             manager.Theme = MaterialSkinManager.Themes.LIGHT;
-            manager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500, Primary.Blue500, Accent.LightBlue200, TextShade.WHITE);
+            manager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500, Primary.Blue500, Accent.Blue100, TextShade.WHITE);
         }
 
         public Panel Content
@@ -40,10 +40,10 @@ namespace WriterApp
             set { MainContainer = value; }
         }
 
-        private void mainFile_Load(object sender, EventArgs e)
+        private void MainFile_Load(object sender, EventArgs e)
         {
-            _instance = this
-                MainContainer.Controls.Add(new ucLogin(){Dock=DockStyle.Fill);
+            _instance = this;
+            MainContainer.Controls.Add(new ucLogin() { Dock = DockStyle.Fill });
         }
     }
 }
