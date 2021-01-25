@@ -16,5 +16,11 @@ namespace WriterApp
         {
             InitializeComponent();
         }
+
+        private void listOnline_Click(object sender, EventArgs e)
+        {
+            frmSend frm = new frmSend();
+            frm.Show();
+        }
     }
 }

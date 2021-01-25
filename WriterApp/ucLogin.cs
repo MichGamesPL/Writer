@@ -19,8 +19,13 @@ namespace WriterApp
 
         private void btnSignln_Click(object sender, EventArgs e)
         {
-            mainFile.Instance.Content.Controls.Add(new ucMain() { Dock = DockStyle.Fill });
-            mainFile.Instance.Content.Controls[0].SendToBack();
+            frmMain.Instance.Content.Controls.Add(new ucMain() { Dock = DockStyle.Fill });
+            frmMain.Instance.Content.Controls[0].SendToBack();
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

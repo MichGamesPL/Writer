@@ -50,11 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="mainFile.cs">
+    <Compile Include="frmSend.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainFile.Designer.cs">
-      <DependentUpon>mainFile.cs</DependentUpon>
+    <Compile Include="frmSend.Designer.cs">
+      <DependentUpon>frmSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,8 +76,11 @@
     <Compile Include="ucMain.Designer.cs">
       <DependentUpon>ucMain.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="mainFile.resx">
-      <DependentUpon>mainFile.cs</DependentUpon>
+    <EmbeddedResource Include="frmSend.resx">
+      <DependentUpon>frmSend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

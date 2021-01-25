@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listOnline = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // listOnline
             // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
+            this.listOnline.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listOnline.FormattingEnabled = true;
+            this.listOnline.Items.AddRange(new object[] {
             "test 1",
             "test 2",
             "test 3"});
-            this.listBox1.Location = new System.Drawing.Point(0, 0);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(327, 506);
-            this.listBox1.TabIndex = 0;
+            this.listOnline.Location = new System.Drawing.Point(0, 0);
+            this.listOnline.Name = "listOnline";
+            this.listOnline.Size = new System.Drawing.Size(327, 506);
+            this.listOnline.TabIndex = 0;
+            this.listOnline.Click += new System.EventHandler(this.listOnline_Click);
             // 
             // ucMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listOnline);
             this.Name = "ucMain";
             this.Size = new System.Drawing.Size(327, 506);
             this.ResumeLayout(false);
@@ -57,6 +58,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listOnline;
     }
 }

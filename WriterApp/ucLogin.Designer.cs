@@ -39,30 +39,33 @@
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(89, 215);
+            this.materialLabel1.Location = new System.Drawing.Point(98, 230);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(96, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(95, 18);
             this.materialLabel1.TabIndex = 1;
             this.materialLabel1.Text = "Twoja nazwa";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(39, 237);
+            this.richTextBox1.BackColor = System.Drawing.Color.Blue;
+            this.richTextBox1.ForeColor = System.Drawing.Color.MintCream;
+            this.richTextBox1.Location = new System.Drawing.Point(39, 267);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(201, 33);
+            this.richTextBox1.Size = new System.Drawing.Size(212, 33);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // btnSignln
             // 
             this.btnSignln.ForeColor = System.Drawing.Color.White;
             this.btnSignln.Image = global::WriterApp.Properties.Resources.login;
-            this.btnSignln.Location = new System.Drawing.Point(77, 287);
+            this.btnSignln.Location = new System.Drawing.Point(39, 330);
             this.btnSignln.Name = "btnSignln";
-            this.btnSignln.Size = new System.Drawing.Size(125, 47);
+            this.btnSignln.Size = new System.Drawing.Size(212, 57);
             this.btnSignln.TabIndex = 3;
             this.btnSignln.Text = "Zaloguj się";
             this.btnSignln.UseVisualStyleBackColor = true;
@@ -71,9 +74,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WriterApp.Properties.Resources.writerLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(47, 53);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 65);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(193, 112);
+            this.pictureBox1.Size = new System.Drawing.Size(230, 135);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;

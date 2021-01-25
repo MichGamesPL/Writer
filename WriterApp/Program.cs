@@ -16,7 +16,7 @@ namespace WriterApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainFile());
+            Application.Run(new frmMain());
         }
     }
 }

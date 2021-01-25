@@ -1,6 +1,6 @@
 ﻿namespace WriterApp
 {
-    partial class mainFile
+    partial class frmMain
     {
         /// <summary>
         /// Wymagana zmienna projektanta.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainFile));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.MainContainer = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 

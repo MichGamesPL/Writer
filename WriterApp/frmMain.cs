@@ -12,38 +12,34 @@ using System.Windows.Forms;
 
 namespace WriterApp
 {
-    public partial class mainFile : MaterialForm
+    public partial class frmMain : MaterialForm
     {
 
-        private static mainFile _instance;
-        public static mainFile Instance
+        private static frmMain _instance;
+        public static frmMain Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new mainFile();
+                    _instance = new frmMain();
                 return _instance;
             }
         }
-        public mainFile()
+        public frmMain()
         {
             InitializeComponent();
             MaterialSkinManager manager = MaterialSkinManager.Instance;
             manager.AddFormToManage(this);
             manager.Theme = MaterialSkinManager.Themes.LIGHT;
             manager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500, Primary.Blue500, Accent.Blue100, TextShade.WHITE);
+            _instance = this;
+            MainContainer.Controls.Add(new ucLogin() { Dock = DockStyle.Fill });
         }
 
         public Panel Content
         {
             get { return MainContainer; }
             set { MainContainer = value; }
-        }
-
-        private void MainFile_Load(object sender, EventArgs e)
-        {
-            _instance = this;
-            MainContainer.Controls.Add(new ucLogin() { Dock = DockStyle.Fill });
         }
     }
 }
