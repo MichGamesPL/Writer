@@ -39,12 +39,12 @@
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(98, 230);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(95, 18);
+            this.materialLabel1.Size = new System.Drawing.Size(96, 19);
             this.materialLabel1.TabIndex = 1;
             this.materialLabel1.Text = "Twoja nazwa";
             // 
@@ -91,6 +91,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "ucLogin";
             this.Size = new System.Drawing.Size(290, 506);
+            this.Load += new System.EventHandler(this.ucLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
