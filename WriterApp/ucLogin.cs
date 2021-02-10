@@ -12,6 +12,7 @@ namespace WriterApp
 {
     public partial class ucLogin : UserControl
     {
+
         public ucLogin()
         {
             InitializeComponent();
@@ -25,8 +26,7 @@ namespace WriterApp
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-            frmMain.Instance.Content.Controls.Add(new ucMain() { Dock = DockStyle.Fill });
-            frmMain.Instance.Content.Controls[0].SendToBack();
+          
         }
 
         private void ucLogin_Load(object sender, EventArgs e)

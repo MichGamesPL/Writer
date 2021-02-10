@@ -14,6 +14,7 @@ namespace WriterApp
 {
     public partial class frmSend : MaterialForm
     {
+
         public frmSend()
         {
             InitializeComponent();
@@ -21,6 +22,14 @@ namespace WriterApp
             manager.AddFormToManage(this);
             manager.Theme = MaterialSkinManager.Themes.LIGHT;
             manager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500, Primary.Blue500, Accent.Blue100, TextShade.WHITE);
+        }
+
+        private void send_Click(object sender, EventArgs e)
+        {
+            frmMain.Instance.Content.Controls.Add(new ucMain() { Dock = DockStyle.Fill });
+            frmMain.Instance.Content.Controls[0].SendToBack();
+            frmSend frm = new frmSend();
+            frm.Hide();
         }
     }
 }
